@@ -1,0 +1,14 @@
+# Terraform files
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.d
+
+# Credentials and sensitive data (adjust as needed)
+terraform-key-ec2 # Private key file (if you have it here)
+*.pem             # Any other private key files
+*.pub             # Public key files are generally okay, but you might want to ignore them too
+
+# Local environment and temporary files
+install_nginx.sh # Likely a script, usually not needed in repo
