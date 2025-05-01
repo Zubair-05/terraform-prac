@@ -76,7 +76,7 @@ resource "aws_instance" "terraform-ec2-instance" {
 
    tags = {
       Environment =  var.env
-      Name = each.key
+      Name = "${var.env}-${each.key}"
    }
   
 }
